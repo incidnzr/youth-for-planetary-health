@@ -1,0 +1,4 @@
+# Netlify Redirects - Clean URLs
+/about          /about.html          200
+/what-we-do     /what-we-do.html     200
+/get-involved   /get-involved.html   200

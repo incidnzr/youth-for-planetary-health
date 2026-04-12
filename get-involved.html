@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved | Planetary Health Youth</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">PH<span>Youth</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="what-we-do.html">What We Do</a></li>
+          <li><a href="get-involved.html" class="active">Get Involved</a></li>
+        </ul>
+        <button class="mobile-toggle" id="mobileToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Get Involved</h1>
+        <p class="page-subtitle">Find your role in the planetary health movement</p>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="section">
+      <div class="container">
+        <div class="content-block center-text">
+          <p class="lead">
+            Whether you're a student, educator, professional, or simply passionate about the future of our planet—there's a place for you here.
+          </p>
+          <p>Choose your path below and we'll help you get started.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form 1: Become a Member -->
+    <section class="section section-alt" id="member">
+      <div class="container">
+        <div class="form-card">
+          <div class="form-header">
+            <div class="form-icon"><i class="fas fa-user-plus"></i></div>
+            <h2>Become a Member</h2>
+          </div>
+          <p class="form-description">
+            Join a growing global community of youth dedicated to planetary health. Get access to resources, events, and a network of changemakers.
+          </p>
+          <form name="become-member" method="POST" netlify class="involvement-form">
+            <input type="hidden" name="form-name" value="become-member">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="member-name">Full Name *</label>
+                <input type="text" id="member-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="member-email">Email Address *</label>
+                <input type="email" id="member-email" name="email" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="member-country">Country *</label>
+                <input type="text" id="member-country" name="country" required>
+              </div>
+              <div class="form-group">
+                <label for="member-age">Age Group</label>
+                <select id="member-age" name="age-group">
+                  <option value="">Select...</option>
+                  <option value="under-18">Under 18</option>
+                  <option value="18-24">18-24</option>
+                  <option value="25-34">25-34</option>
+                  <option value="35-plus">35+</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="member-why">Why do you want to join? (Optional)</label>
+              <textarea id="member-why" name="why-join" rows="3"></textarea>
+            </div>
+            
+            <div class="form-group checkbox">
+              <label>
+                <input type="checkbox" name="newsletter" checked>
+                Sign up for our newsletter
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit Membership Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form 2: Start a Club -->
+    <section class="section" id="club">
+      <div class="container">
+        <div class="form-card">
+          <div class="form-header">
+            <div class="form-icon"><i class="fas fa-users"></i></div>
+            <h2>Start a Club</h2>
+          </div>
+          <p class="form-description">
+            Bring planetary health to your university or high school. We'll provide toolkits, guidance, and connection to our global network.
+          </p>
+          <form name="start-club" method="POST" netlify class="involvement-form">
+            <input type="hidden" name="form-name" value="start-club">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="club-name">Full Name *</label>
+                <input type="text" id="club-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="club-email">Email Address *</label>
+                <input type="email" id="club-email" name="email" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="club-institution">School/University Name *</label>
+                <input type="text" id="club-institution" name="institution" required>
+              </div>
+              <div class="form-group">
+                <label for="club-type">Institution Type *</label>
+                <select id="club-type" name="institution-type" required>
+                  <option value="">Select...</option>
+                  <option value="high-school">High School</option>
+                  <option value="university">University / College</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="club-country">Country *</label>
+                <input type="text" id="club-country" name="country" required>
+              </div>
+              <div class="form-group">
+                <label for="club-city">City *</label>
+                <input type="text" id="club-city" name="city" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="club-members">Expected number of members (Optional)</label>
+              <input type="text" id="club-members" name="expected-members">
+            </div>
+            
+            <div class="form-group">
+              <label for="club-message">Tell us about your vision for the club (Optional)</label>
+              <textarea id="club-message" name="message" rows="3"></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label class="download-label">
+                <i class="fas fa-download"></i> 
+                <a href="assets/documents/club-toolkit.pdf" target="_blank">Download Club Toolkit (PDF)</a>
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit Club Application</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form 3: Become a Youth Ambassador -->
+    <section class="section section-alt" id="ambassador">
+      <div class="container">
+        <div class="form-card">
+          <div class="form-header">
+            <div class="form-icon"><i class="fas fa-star"></i></div>
+            <h2>Become a Youth Ambassador</h2>
+          </div>
+          <p class="form-description">
+            Represent planetary health in your region. Help expand our reach, organize local events, and connect communities to the global movement.
+          </p>
+          <form name="youth-ambassador" method="POST" netlify class="involvement-form">
+            <input type="hidden" name="form-name" value="youth-ambassador">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="amb-name">Full Name *</label>
+                <input type="text" id="amb-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="amb-email">Email Address *</label>
+                <input type="email" id="amb-email" name="email" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="amb-country">Country *</label>
+                <input type="text" id="amb-country" name="country" required>
+              </div>
+              <div class="form-group">
+                <label for="amb-languages">Languages Spoken</label>
+                <input type="text" id="amb-languages" name="languages">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="amb-experience">Relevant experience or skills (Optional)</label>
+              <textarea id="amb-experience" name="experience" rows="3"></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="amb-motivation">Why do you want to be an ambassador? *</label>
+              <textarea id="amb-motivation" name="motivation" rows="3" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Apply to be an Ambassador</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form 4: Join a Training -->
+    <section class="section" id="training">
+      <div class="container">
+        <div class="form-card">
+          <div class="form-header">
+            <div class="form-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h2>Join a Training</h2>
+          </div>
+          <p class="form-description">
+            Build your skills through workshops, webinars, and capacity-building sessions. Let us know what you're interested in learning.
+          </p>
+          <form name="join-training" method="POST" netlify class="involvement-form">
+            <input type="hidden" name="form-name" value="join-training">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="train-name">Full Name *</label>
+                <input type="text" id="train-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="train-email">Email Address *</label>
+                <input type="email" id="train-email" name="email" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label>Topics of Interest *</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="topics" value="planetary-health-basics"> Planetary Health Basics</label>
+                <label><input type="checkbox" name="topics" value="climate-advocacy"> Climate Advocacy</label>
+                <label><input type="checkbox" name="topics" value="project-management"> Youth Project Management</label>
+                <label><input type="checkbox" name="topics" value="eco-anxiety"> Eco-Anxiety & Mental Health</label>
+                <label><input type="checkbox" name="topics" value="club-leadership"> Club Leadership</label>
+                <label><input type="checkbox" name="topics" value="policy"> Policy & Systems Change</label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="train-message">Additional comments or specific training needs</label>
+              <textarea id="train-message" name="message" rows="3"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Register Interest</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form 5: Partner With Us -->
+    <section class="section section-alt" id="partner">
+      <div class="container">
+        <div class="form-card">
+          <div class="form-header">
+            <div class="form-icon"><i class="fas fa-handshake"></i></div>
+            <h2>Partner With Us</h2>
+          </div>
+          <p class="form-description">
+            We collaborate with organizations, institutions, and networks that share our vision. Let's explore how we can work together.
+          </p>
+          <form name="partner-with-us" method="POST" netlify class="involvement-form">
+            <input type="hidden" name="form-name" value="partner-with-us">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="partner-name">Full Name *</label>
+                <input type="text" id="partner-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="partner-org">Organization Name *</label>
+                <input type="text" id="partner-org" name="organization" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="partner-email">Email Address *</label>
+                <input type="email" id="partner-email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="partner-role">Your Role *</label>
+                <input type="text" id="partner-role" name="role" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="partner-type">Partnership Type *</label>
+              <select id="partner-type" name="partnership-type" required>
+                <option value="">Select...</option>
+                <option value="sponsorship">Sponsorship / Funding</option>
+                <option value="program">Program Collaboration</option>
+                <option value="network">Network Partnership</option>
+                <option value="research">Research Partnership</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="partner-message">Tell us about your organization and partnership ideas *</label>
+              <textarea id="partner-message" name="message" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit Partnership Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Alternative -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-alt">
+          <p><i class="fas fa-envelope"></i> Prefer email? Reach us directly at <a href="mailto:hello@planetaryhealthyouth.org">hello@planetaryhealthyouth.org</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cta">
+        <h3>Ready to take action?</h3>
+        <div class="footer-cta-buttons">
+          <a href="get-involved.html#member" class="btn btn-footer">Become a Member</a>
+          <a href="get-involved.html#club" class="btn btn-footer">Start a Club</a>
+          <a href="get-involved.html#ambassador" class="btn btn-footer">Become an Ambassador</a>
+          <a href="get-involved.html#training" class="btn btn-footer">Join a Training</a>
+          <a href="get-involved.html#partner" class="btn btn-footer">Partner With Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Planetary Health Youth. A youth-led organization within the Planetary Health Alliance community.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
