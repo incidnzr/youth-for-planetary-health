@@ -14,7 +14,8 @@
     <div class="container">
       <nav class="navbar">
         <div class="logo">
-          PH<span>Youth</span>
+          <img src="assets/images/logo2.png" alt="Planetary Health Youth" class="logo-img logo-desktop">
+          <img src="assets/images/logo.png" alt="Planetary Health Youth" class="logo-img logo-mobile">
         </div>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
@@ -30,9 +31,10 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" style="background-image: url('assets/images/header.jpg'); background-size: cover; background-position: center;">
     <div class="container">
       <div class="hero-content">
+        <span class="hero-eyebrow">Youth for Planetary Health</span>
         <h1 class="hero-title">
           A growing global youth movement of hundreds of members, working towards a healthier planet and healthier people.
         </h1>
@@ -41,27 +43,52 @@
         </p>
         <div class="hero-cta">
           <a href="get-involved.html" class="btn btn-primary">Join the Movement</a>
-          <a href="what-we-do.html" class="btn btn-secondary">Learn More</a>
+          <a href="what-we-do.html" class="btn btn-hero-outline">Learn More</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Stats Strip -->
+  <div class="stats-strip">
+    <div class="container">
+      <div class="strip-stat">
+        <span class="strip-stat-number">500+</span>
+        <span class="strip-stat-label">Youth Members</span>
+      </div>
+      <div class="strip-stat">
+        <span class="strip-stat-number">30+</span>
+        <span class="strip-stat-label">Countries</span>
+      </div>
+      <div class="strip-stat">
+        <span class="strip-stat-number">50+</span>
+        <span class="strip-stat-label">University Clubs</span>
+      </div>
+      <div class="strip-stat">
+        <span class="strip-stat-number">100+</span>
+        <span class="strip-stat-label">Projects Launched</span>
+      </div>
+    </div>
+  </div>
+
   <!-- About Teaser Section -->
   <section class="section">
     <div class="container">
-      <div class="section-header">
-        <h2>About Us</h2>
-        <p class="section-subtitle">Youth-led. Planetary Health. Global impact.</p>
-      </div>
-      <div class="about-teaser">
-        <p class="lead">
-          We are a youth-led organization within the Planetary Health global community, created to expand global understanding of planetary health as a public health concept—the relationship between the health of human populations and the natural systems we depend on.
-        </p>
-        <p>
-          Our focus is simple: make planetary health more visible, practical, and youth-powered. We do this by delivering accessible education, organizing training and capacity-building opportunities, launching youth-led leadership projects, and supporting the creation of planetary health clubs in universities and high schools.
-        </p>
-        <a href="about.html" class="link-arrow">Read full about us <i class="fas fa-arrow-right"></i></a>
+      <div class="about-split">
+        <div class="about-split-image">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" alt="Youth working together for planetary health">
+        </div>
+        <div class="about-split-text">
+          <h2>About Us</h2>
+          <p class="section-subtitle">Youth-led. Planetary Health. Global impact.</p>
+          <p class="lead">
+            We are a youth-led organization within the Planetary Health global community, created to expand global understanding of planetary health as a public health concept—the relationship between the health of human populations and the natural systems we depend on.
+          </p>
+          <p>
+            Our focus is simple: make planetary health more visible, practical, and youth-powered. We do this by delivering accessible education, organizing training and capacity-building opportunities, launching youth-led leadership projects, and supporting the creation of planetary health clubs in universities and high schools.
+          </p>
+          <a href="about.html" class="link-arrow">Read full about us <i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
     </div>
   </section>
@@ -106,6 +133,22 @@
     </div>
   </section>
 
+  <!-- Club Spotlight Teaser -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Clubs in Action</h2>
+        <p class="section-subtitle">Real students. Real impact. Everywhere.</p>
+      </div>
+      <div class="spotlight-card">
+        <div class="spotlight-tag"><i class="fas fa-map-marker-alt"></i> Fredericksburg, VA — High School Club</div>
+        <h3>Youth for Planetary Health takes root in local schools</h3>
+        <p>A student-led club is bringing planetary health to the forefront — organizing educational events, a "Sustainable Swap" Earth Day project, native plant installations, and social media campaigns with reels, infographics, and mini podcasts. Led entirely by students, it's exactly the kind of local action we exist to support.</p>
+        <a href="what-we-do.html#clubs" class="link-arrow">See how we support clubs like this <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
   <!-- Vision & Mission Teaser -->
   <section class="section">
     <div class="container">
@@ -144,6 +187,9 @@
   <!-- Footer with CTAs -->
   <footer class="footer">
     <div class="container">
+      <div class="footer-tagline">
+        <p>Because we are the last generation with the power to change the course of our planet's future for the better.</p>
+      </div>
       <div class="footer-cta">
         <h3>Ready to take action?</h3>
         <div class="footer-cta-buttons">
