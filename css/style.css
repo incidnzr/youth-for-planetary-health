@@ -91,7 +91,7 @@ a.logo {
 
 /* ===== LOGO IMAGE ===== */
 .logo-img {
-  height: 56px;
+  height: 76px;
   width: auto;
   display: block;
 }
@@ -800,6 +800,92 @@ a.logo {
 /* ===== CONTACT ALT ===== */
 .contact-alt { text-align: center; padding: 20px; }
 .contact-alt i { color: var(--primary); margin-right: 8px; }
+
+/* ===== UN HIGHLIGHT ===== */
+.un-highlight {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  border-top: 5px solid #009edb;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.un-highlight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e8f6fc;
+  color: #007bb5;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 14px;
+  border-radius: 40px;
+  margin-bottom: 24px;
+}
+
+.un-highlight-body {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 40px;
+  align-items: start;
+}
+
+.un-tag {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.un-highlight-text h2 {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.un-quote {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--primary);
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
+.un-letter-card {
+  background: #f4f9fc;
+  border: 1px solid #c8e4f0;
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.un-letter-icon {
+  font-size: 2.5rem;
+  color: #009edb;
+  margin-bottom: 16px;
+}
+
+.un-letter-card p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+.un-letter-date {
+  font-size: 0.85rem !important;
+  color: var(--accent) !important;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .un-highlight { padding: 28px 20px; }
+  .un-highlight-body { grid-template-columns: 1fr; gap: 24px; }
+}
 
 /* ===== CTA BOX ===== */
 .cta-box {
