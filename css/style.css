@@ -59,7 +59,7 @@ a:hover { color: var(--primary-light); }
 header {
   padding: 16px 0;
   border-bottom: 1px solid rgba(255,255,255,0.15);
-  background-color: #1F8AA5;
+  background-color: #018EBC;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -828,7 +828,7 @@ header {
     top: 88px;
     left: 0;
     right: 0;
-    background: #1F8AA5;
+    background: #018EBC;
     flex-direction: column;
     padding: 24px;
     gap: 16px;
