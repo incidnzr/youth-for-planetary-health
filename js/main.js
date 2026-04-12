@@ -41,15 +41,54 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Netlify Forms - optional success message handling
-const forms = document.querySelectorAll('form[netlify]');
-forms.forEach(form => {
-  form.addEventListener('submit', (e) => {
-    // Netlify handles the actual submission; this is just for UX
+// Netlify Forms — AJAX submit + SweetAlert2 popup
+document.querySelectorAll('form[netlify]').forEach(form => {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
     const button = form.querySelector('button[type="submit"]');
+    const originalText = button ? button.textContent : '';
+
     if (button) {
       button.textContent = 'Submitting...';
       button.disabled = true;
+    }
+
+    try {
+      const data = new FormData(form);
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString()
+      });
+
+      form.reset();
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Thank you!',
+        text: 'Your submission has been received. We\'ll be in touch soon.',
+        confirmButtonText: 'Close',
+        confirmButtonColor: '#1e4a4b',
+        borderRadius: '16px',
+        customClass: {
+          popup: 'swal-popup',
+          title: 'swal-title',
+        }
+      });
+
+    } catch (err) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops!',
+        text: 'Something went wrong. Please try again or email us directly.',
+        confirmButtonColor: '#1e4a4b',
+      });
+    } finally {
+      if (button) {
+        button.textContent = originalText;
+        button.disabled = false;
+      }
     }
   });
 });
