@@ -92,3 +92,81 @@ document.querySelectorAll('form[netlify]').forEach(form => {
     }
   });
 });
+
+
+// Testimonials Slider
+const slider = document.getElementById('testimonialsSlider');
+if (slider) {
+  const slides = slider.querySelectorAll('.testimonial-slide');
+  const dotsContainer = slider.querySelector('.testimonial-dots');
+  const prevBtn = slider.querySelector('.testimonial-prev');
+  const nextBtn = slider.querySelector('.testimonial-next');
+  let currentSlide = 0;
+  let autoPlay;
+
+  // Create dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.classList.add('testimonial-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = dotsContainer.querySelectorAll('.testimonial-dot');
+
+  function goToSlide(index) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    currentSlide = index;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+  }
+
+  function nextSlide() {
+    goToSlide((currentSlide + 1) % slides.length);
+  }
+
+  function prevSlide() {
+    goToSlide((currentSlide - 1 + slides.length) % slides.length);
+  }
+
+  nextBtn.addEventListener('click', () => { nextSlide(); resetAutoPlay(); });
+  prevBtn.addEventListener('click', () => { prevSlide(); resetAutoPlay(); });
+
+  function startAutoPlay() {
+    autoPlay = setInterval(nextSlide, 5000);
+  }
+
+  function resetAutoPlay() {
+    clearInterval(autoPlay);
+    startAutoPlay();
+  }
+
+  startAutoPlay();
+}
+
+
+// Blog Category Filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+if (filterBtns.length > 0) {
+  const blogCards = document.querySelectorAll('.blog-card[data-category]');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+
+      blogCards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+}

@@ -4,9 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planetary Health Youth | Home</title>
+  <meta name="description" content="Youth for Planetary Health — a growing global youth movement of 200+ members across 15 countries, working towards a healthier planet and healthier people through awareness, capacity building, and youth-led projects.">
+  <meta property="og:title" content="Youth for Planetary Health">
+  <meta property="og:description" content="A growing global youth movement working towards a healthier planet and healthier people. Join 200+ members across 15 countries.">
+  <meta property="og:image" content="assets/images/header.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Youth for Planetary Health">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Youth for Planetary Health">
+  <meta name="twitter:description" content="A growing global youth movement working towards a healthier planet and healthier people.">
+  <meta name="twitter:image" content="assets/images/header.jpg">
   <link rel="stylesheet" href="css/style.css">
   <!-- Font Awesome for icons (free) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <!-- Header & Navigation -->
@@ -21,6 +31,9 @@
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="what-we-do.html">What We Do</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="members.html">Members</a></li>
           <li><a href="get-involved.html">Get Involved</a></li>
         </ul>
         <button class="mobile-toggle" id="mobileToggle">
@@ -49,34 +62,12 @@
     </div>
   </section>
 
-  <!-- Stats Strip -->
-  <div class="stats-strip">
-    <div class="container">
-      <div class="strip-stat">
-        <span class="strip-stat-number">500+</span>
-        <span class="strip-stat-label">Youth Members</span>
-      </div>
-      <div class="strip-stat">
-        <span class="strip-stat-number">30+</span>
-        <span class="strip-stat-label">Countries</span>
-      </div>
-      <div class="strip-stat">
-        <span class="strip-stat-number">50+</span>
-        <span class="strip-stat-label">University Clubs</span>
-      </div>
-      <div class="strip-stat">
-        <span class="strip-stat-number">100+</span>
-        <span class="strip-stat-label">Projects Launched</span>
-      </div>
-    </div>
-  </div>
-
   <!-- About Teaser Section -->
   <section class="section">
     <div class="container">
       <div class="about-split">
         <div class="about-split-image">
-          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" alt="Youth working together for planetary health">
+          <img src="assets/images/about-split.jpg" loading="lazy" alt="Youth working together for planetary health">
         </div>
         <div class="about-split-text">
           <h2>About Us</h2>
@@ -149,6 +140,85 @@
     </div>
   </section>
 
+  <!-- Testimonials Slider -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Voices From Our Community</h2>
+        <p class="section-subtitle">What our members say about being part of the movement</p>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonial-track">
+          <div class="testimonial-slide active">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">
+                <i class="fas fa-quote-left"></i>
+                <p>Being part of Youth for Planetary Health showed me that young people can truly influence global health policy. It gave me the confidence to speak at the UN.</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                <div class="testimonial-info">
+                  <strong>Vildan Soguktas</strong>
+                  <span>Founder & Lead Representative, USA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">
+                <i class="fas fa-quote-left"></i>
+                <p>Starting a planetary health club at my school was the best decision I've made. The support from the global network made it possible — we went from 5 members to 40 in one semester.</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                <div class="testimonial-info">
+                  <strong>Brianna Quinn</strong>
+                  <span>Club Vice President, Virginia, USA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">
+                <i class="fas fa-quote-left"></i>
+                <p>YFPH connected me with like-minded youth from 15 different countries. Together we're not just talking about change — we're making it happen in our local communities.</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                <div class="testimonial-info">
+                  <strong>Community Member</strong>
+                  <span>Youth Ambassador, Kenya</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">
+                <i class="fas fa-quote-left"></i>
+                <p>The training workshops helped me understand how climate change directly impacts mental health. Now I lead eco-anxiety support sessions at my university.</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                <div class="testimonial-info">
+                  <strong>Community Member</strong>
+                  <span>Training Participant, Indonesia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-btn testimonial-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+          <div class="testimonial-dots"></div>
+          <button class="testimonial-btn testimonial-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Vision & Mission Teaser -->
   <section class="section">
     <div class="container">
@@ -168,7 +238,7 @@
     </div>
   </section>
 
-  <!-- UN ECOSOC Highlight -->
+  <!-- UN STI Forum Highlight -->
   <section class="section section-alt">
     <div class="container">
       <div class="un-highlight">
@@ -177,23 +247,51 @@
         </div>
         <div class="un-highlight-body">
           <div class="un-highlight-text">
-            <span class="un-tag">🌍 United Nations · April 2026</span>
-            <h2>We're heading to the UN ECOSOC Youth Forum</h2>
-            <p>Youth for Planetary Health will be represented at the only annual UN youth conference — the <strong>2026 ECOSOC Youth Forum</strong>, held 14–16 April at UN Headquarters in New York City, under the theme <em>"Innovate, Unite and Transform: Youth Shaping the Road to 2030."</em></p>
-            <p>We'll bring the voice and agenda of the Planetary Health Alliance, Ecopsychepedia, and Climate Junction to global youth policy discussions — advocating for stronger youth participation and greater awareness to protect human health in the face of planetary crises, with a particular focus on <strong>SDG 11</strong> and the role of sustainable urbanization in reducing the impacts of climate change, pollution, extreme heat, and environmental contamination on brain health.</p>
-            <p class="un-quote">"Solving today's polycrisis — especially the planetary crisis and its impacts on our mental and physical health — is impossible without youth."</p>
+            <span class="un-tag">🌍 United Nations · May 5, 2026</span>
+            <h2>Healthy Planet, Healthy Minds and Brains: Science for Resilient Cities and Communities</h2>
+            <p>We hosted a side event at the <strong>UN Science, Technology and Innovation Forum</strong>, exploring the interconnection between planetary crisis, brain health, and mental well-being — especially among young people.</p>
+            <p>Our expert speakers shared powerful, evidence-backed perspectives: heatwaves increasing suicide rates by 3% in young adults, climate's sweeping health consequences, urban stressors compounding mental health burdens, protecting children's mental health from environmental disruption, and the case for brain-positive urban systems.</p>
+            <p class="un-quote">"Mental and brain health must be integrated into urban planning, climate policy, and sustainable development frameworks."</p>
+            <a href="https://lnkd.in/eRmPU7ym" target="_blank" rel="noopener" class="link-arrow">Watch the full event video <i class="fas fa-play-circle"></i></a>
           </div>
           <div class="un-highlight-letter">
             <div class="un-letter-card">
-              <div class="un-letter-icon"><i class="fas fa-file-alt"></i></div>
-              <p><strong>Official Invitation</strong></p>
-              <p>Signed by Lok Bahadur Thapa<br>President of ECOSOC</p>
-              <p class="un-letter-date">11 March 2026</p>
-              <p>Addressed to Vildan Soguktas<br><em>Representative of Youth for Planetary Health</em></p>
+              <div class="un-letter-icon"><i class="fas fa-users"></i></div>
+              <p><strong>Speakers</strong></p>
+              <p>Dr. Joshua Wortzel<br>Dr. Maria Neira<br>Ms. Toni-Shae Freckleton<br>Ms. Leyla McCurdy<br>Dr. Rym Ayadi<br>Amb. Hamad Sayyar</p>
+              <p class="un-letter-date">May 5, 2026</p>
+              <p>UN STI Forum<br><em>New York</em></p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Partners & Allies -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Partners & Allies</h2>
+        <p class="section-subtitle">Proud member of the global planetary health community</p>
+      </div>
+      <div class="partners-carousel">
+        <div class="partners-track">
+          <div class="partner-logo">
+            <img src="assets/images/planetaryhealthalliance.png" loading="lazy" alt="Planetary Health Alliance">
+            <span>Planetary Health Alliance</span>
+          </div>          
+          <div class="partner-logo">
+            <img src="assets/images/planetaryhealthalliance_blue.webp" loading="lazy" alt="Planetary Health Alliance">
+            <span>Planetary Health Alliance</span>
+          </div>
+          <div class="partner-logo">
+            <img src="assets/images/planetaryhealthalliance_green.webp" loading="lazy" alt="Planetary Health Alliance">
+            <span>Planetary Health Alliance</span>
+          </div>
+        </div>
+      </div>
+      <p class="partners-note">More partners coming soon. <a href="get-involved.html#partner">Partner with us →</a></p>
     </div>
   </section>
 
@@ -227,6 +325,17 @@
           <a href="get-involved.html#ambassador" class="btn btn-footer">Become an Ambassador</a>
           <a href="get-involved.html#training" class="btn btn-footer">Join a Training</a>
           <a href="get-involved.html#partner" class="btn btn-footer">Partner With Us</a>
+        </div>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="TikTok" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
       <div class="footer-bottom">
