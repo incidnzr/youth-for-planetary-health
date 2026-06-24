@@ -170,3 +170,17 @@ if (filterBtns.length > 0) {
     });
   });
 }
+
+
+// Committees Tab Switcher
+const committeeBtns = document.querySelectorAll('.committee-btn');
+if (committeeBtns.length > 0) {
+  committeeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      committeeBtns.forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.committee-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('committee-' + btn.dataset.committee).classList.add('active');
+    });
+  });
+}

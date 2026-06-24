@@ -443,7 +443,7 @@ a.logo {
 .footer {
   background-color: var(--primary);
   color: white;
-  padding: 72px 0 32px;
+  padding: 0px 0 32px;
 }
 
 .footer-tagline {
@@ -2355,5 +2355,408 @@ a.logo {
   .filter-btn {
     padding: 6px 14px;
     font-size: 0.8rem;
+  }
+}
+
+
+/* ===== PLANETARY HEALTH DEFINITION ===== */
+.definition-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.definition-eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.definition-left h2 {
+  color: var(--primary);
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 0;
+}
+
+.definition-right {
+  border-left: 4px solid var(--accent);
+  padding-left: 32px;
+}
+
+.definition-right .lead {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .definition-split {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .definition-right {
+    border-left: none;
+    border-top: 4px solid var(--accent);
+    padding-left: 0;
+    padding-top: 24px;
+  }
+}
+
+
+/* ===== HERO TWO COLUMN ===== */
+.hero-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.hero-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-col + .hero-col {
+  border-left: 1px solid rgba(255,255,255,0.3);
+  padding-left: 48px;
+}
+
+.hero-col-text {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  line-height: 1.5;
+  color: rgba(255,255,255,0.9);
+  margin: 0;
+}
+
+.hero-col-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-two-col {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero-col + .hero-col {
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-left: 0;
+    padding-top: 28px;
+  }
+}
+
+
+/* ===== FOOTER PHA BADGE ===== */
+.footer-pha-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  margin-bottom: 40px;
+}
+
+.footer-pha-badge img {
+  height: 60px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.footer-pha-badge p {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: white;
+  margin: 0;
+}
+
+.footer-pha-badge a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-pha-badge a:hover {
+  color: white;
+}
+
+
+/* ===== FOOTER BOTTOM LINK ===== */
+.footer-bottom a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-bottom a:hover {
+  color: white;
+}
+
+
+/* ===== PARTNER TEXT PLACEHOLDER ===== */
+.partner-logo-text {
+  justify-content: center;
+}
+
+.partner-logo-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Slower scroll for more partners */
+.partners-track {
+  animation-duration: 40s;
+}
+
+
+/* ===== PARTNER LOGO BLUE BACKGROUND ===== */
+.partner-logo-bg-blue {
+  background-color: white;
+  border-color: var(--border-light);
+}
+
+.partner-logo-bg-blue img {
+  background-color: #4a90b8;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+
+/* ===== FOUNDER CARD ===== */
+.founder-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+  border-left: 5px solid var(--accent);
+  max-width: 500px;
+}
+
+.founder-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.founder-info h3 {
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.founder-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0077b5;
+  background: #e8f4fb;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.founder-linkedin:hover {
+  background: #0077b5;
+  color: white;
+}
+
+/* ===== CORE TEAM GRID ===== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.team-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+  border-top: 3px solid var(--primary);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.team-name {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.team-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.team-country {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.team-country::before {
+  content: '📍 ';
+}
+
+.team-role {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* ===== COMMITTEES ===== */
+.committee-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.committee-btn {
+  padding: 10px 22px;
+  border-radius: 40px;
+  border: 1px solid var(--border-light);
+  background: white;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.committee-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.committee-btn.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.committee-panel {
+  display: none;
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--accent);
+}
+
+.committee-panel.active {
+  display: block;
+}
+
+.committee-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.committee-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  padding: 8px 12px;
+  background: var(--bg-alt);
+  border-radius: 8px;
+}
+
+.committee-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
+}
+
+.committee-senior {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  background: rgba(232,184,75,0.15);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .founder-card {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .committee-buttons {
+    gap: 8px;
+  }
+
+  .committee-btn {
+    padding: 8px 16px;
+    font-size: 0.82rem;
+  }
+
+  .committee-list {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 }
